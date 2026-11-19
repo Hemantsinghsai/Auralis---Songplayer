@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body { @apply bg-midnight text-slate-200 antialiased; }
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-thumb { background: #2a2a3d; border-radius: 8px; }
+
+@keyframes eq { 0%, 100% { transform: scaleY(0.25); } 50% { transform: scaleY(1); } }
+.eq-bar { transform-origin: bottom; animation: eq 1s ease-in-out infinite; }
+.paused .eq-bar { animation-play-state: paused; }
